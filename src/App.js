@@ -17,12 +17,10 @@ function App() {
   const [quote, setQuote] = useState(sampleQuote);
   
   const getQuote= () => {
-    // Send the request
     axios
       .get('https://simpsons-quotes-api.herokuapp.com/quotes')
-      // Extract the DATA from the received response
+
       .then((response) => response.data)
-      // Use this data to update the state
       .then((data) => {
         setQuote(data);
       });
