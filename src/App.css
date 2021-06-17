@@ -1,21 +1,29 @@
 .App {
   text-align: center;
 }
+
+h1 {
+  background-color: rgb(0, 162, 255);
+}
+
 .newQuote {
-  margin:15px;
-  border-radius:25px;
-  display:grid;
-  grid-template-columns:2;
+  margin: 15px;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 2;
   grid-template-rows: 2;
   background-color: white;
 }
+
 .character {
   background: white;
-  width:90%;
+  width: 90%;
+  font-size:5vw;
 }
+
 .quote {
-  grid-column:1;
-  grid-row:3;
+  grid-column: 1;
+  grid-row: 3;
   margin: auto;
   height: 40vw;
   width: 30vw;
@@ -25,27 +33,31 @@
 
 .pic {
   margin-left: 10px;
-  grid-column:2;
-  grid-row:3;
+  grid-column: 2;
+  grid-row: 3;
   height: 60vw;
   background: white;
 }
 
 button {
+  margin-top: 7vw;
   font-size: 25px;
   background-color: rgb(238, 255, 0);
   cursor: pointer;
 }
 
 @media screen and (min-width: 640px) {
+  .character {
+    font-size:3vw;
+  }
 
-.pic {
-  height: 25vw;
-}
+  .pic {
+    height: 25vw;
+  }
 
-.quote {
-  font-size: 1.6vw;
-  height: 10vw;
-  width: 40vw;
-}
+  .quote {
+    font-size: 1.6vw;
+    height: 10vw;
+    width: 40vw;
+  }
 }

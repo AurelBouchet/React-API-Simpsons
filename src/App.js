@@ -28,6 +28,7 @@ function App() {
 
   return (
     <div className="App">
+        <h1> SIMPSONS QUOTES</h1>
      <NewQuote quote={quote[0]} />
      <button type="button" onClick={getQuote}>Get a new quote !</button>
     </div>
